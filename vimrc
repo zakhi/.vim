@@ -25,7 +25,14 @@ if &t_Co == 16 && $TERM =~# '^cygwin'
   set t_Co=8
 endif
 
+" Set tab stops to 2 spaces
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+
+" hidden characters
+set listchars=tab:▸\ ,eol:↵,trail:·,nbsp:␣,extends:→,precedes:←
+
 " various settings
-set showcmd		" display incomplete commands
-set hlsearch		" display search highlighting
-set number		" show line numbers
+set showcmd     " display incomplete commands
+set hlsearch    " display search highlighting
+set number      " show line numbers
+set hidden      " auto-hide buffers
