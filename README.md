@@ -2,9 +2,10 @@
 
 Clone the repository:
 
-    git clone
+    git clone https://zakhi@bitbucket.org/zakhi/dotvim.git ~/.vim
 
-Create symlinks:
+Create symbolic link for VI in Windows (using CMD):
 
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimtc ~/.gvimrc
+    cd /D %USERPROFILE%
+    mklink /D vimfiles .vim
+
