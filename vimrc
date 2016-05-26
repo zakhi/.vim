@@ -36,3 +36,5 @@ set showcmd     " display incomplete commands
 set hlsearch    " display search highlighting
 set number      " show line numbers
 set hidden      " auto-hide buffers
+set backup      " use backup files
+
