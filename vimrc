@@ -20,6 +20,12 @@ if has('mouse')
   set mouse=a
 endif
 
+" set cygwin terminal to use 8 colors
+if &t_Co == 16 && $TERM =~# '^cygwin'
+  set t_Co=8
+endif
+
 " various settings
 set showcmd		" display incomplete commands
 set hlsearch		" display search highlighting
+set number		" show line numbers
