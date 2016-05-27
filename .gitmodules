@@ -7,3 +7,6 @@
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/after-colors"]
+	path = bundle/after-colors
+	url = https://github.com/vim-scripts/AfterColors.vim.git
