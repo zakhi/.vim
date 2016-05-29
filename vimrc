@@ -1,7 +1,3 @@
-if v:progname =~? "evim"
-  finish
-endif
-
 " Use Vim settings, rather than Vi settings 
 set nocompatible
 
@@ -10,6 +6,9 @@ execute pathogen#infect()
 
 " load sensible defaults
 runtime! plugin/sensible.vim
+
+"always use utf-8
+set encoding=utf-8
 
 " hide backup and swap files
 set backupdir=~/.vim/backup,~/vimfiles/backup
@@ -29,7 +28,7 @@ endif
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 " hidden characters
-set listchars=tab:▸\ ,eol:↵,trail:·,nbsp:␣,extends:→,precedes:←
+set listchars=tab:▸\ ,eol:¬,trail:·,nbsp:·,extends:→,precedes:←
 
 " various settings
 set showcmd     " display incomplete commands
