@@ -1,0 +1,2 @@
+highlight LineNr ctermfg=DarkGrey
+
