@@ -4,8 +4,8 @@ set nocompatible
 " load pathogen
 execute pathogen#infect()
 
-" set 256-color terminal
-if (!has("gui_running")) && ($term !~ 'xterm')
+" set 256-color terminal for windows console
+if (!has("gui_running")) && (&term == 'win32')
   set term=xterm
   set t_Co=256
   let &t_AB="\e[48;5;%dm"
@@ -15,6 +15,12 @@ endif
 
 " load sensible defaults
 runtime! plugin/sensible.vim
+
+" set 8-color terminal for cygwin
+if (!has("gui_running")) && (&term == 'cygwin')
+  set t_Co=8
+  colorscheme delek
+endif
 
 "always use utf-8
 set encoding=utf-8
