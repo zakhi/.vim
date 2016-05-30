@@ -4,6 +4,15 @@ set nocompatible
 " load pathogen
 execute pathogen#infect()
 
+" set 256-color terminal
+if (!has("gui_running")) && ($term !~ 'xterm')
+  set term=xterm
+  set t_Co=256
+  let &t_AB="\e[48;5;%dm"
+  let &t_AF="\e[38;5;%dm"
+  colorscheme lettuce
+endif
+
 " load sensible defaults
 runtime! plugin/sensible.vim
 
@@ -17,11 +26,6 @@ set directory=~/.vim/swap,~/vimfiles/swap
 " enable mouse
 if has('mouse')
   set mouse=a
-endif
-
-" set cygwin terminal to use 8 colors
-if &t_Co == 16 && $TERM =~# '^cygwin'
-  set t_Co=8
 endif
 
 " Set tab stops to 2 spaces

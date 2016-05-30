@@ -13,3 +13,6 @@
 [submodule "bundle/Dockerfile"]
 	path = bundle/Dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "bundle/lettuce"]
+	path = bundle/lettuce
+	url = https://github.com/vim-scripts/lettuce.vim.git
