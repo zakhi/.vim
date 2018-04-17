@@ -2,11 +2,11 @@
 
 Clone the repository:
 
-    git clone https://zakhi@bitbucket.org/zakhi/dotvim.git ~/.vim
+    git clone https://github.com/zakhi/.vim.git "$HOME/.vim"
     
 Fetch submodules
 
-    git -C .vim submodule update --init
+    git -C "$HOME/.vim" submodule update --init
 
 Create symbolic link for VI in Windows (using CMD):
 
